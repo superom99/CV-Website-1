@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>مشروع ويب</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">محمد حمامي</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <span>Github</span>
+        <i class="fa-brands fa-github"></i>
+      </a>
+      
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:mohammad@example.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>السيرة الذاتية</h2>
+        <p>انا محمد حمامي ادرس في جامعة الشهياء في كلية الهندسة قسم هندسة المعلومات وانا من طلاب السنة الثانية واعمل في مجال تصميم واجهات المواقع (front-end) وأعمل على تعلم مجال برمجة التطبيقات</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>المهارات</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>الشهادات</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>للتواصل</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/moh.jpg" alt="صورة محمد حمامي">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>المهارات</h2>
+      <div class="text">
+        لدي خبرة كبيرة بإستخدام لغة HTML ولغة CSS ولغة JavaScript وأستطيع برمجة واجهات موافع بئحترافية سواء كان الموفع باللغة العربية أة كان باللغة الإنغليزية
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>الشهادات العلمية</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/moha.jpg">
+          <p>محمد حمامي</p>
+          <p>مصمم واجهات موافع</p>
+        </div>
+
+        <div class="text">
+          انني حاصل على شهادة في هندسة المعلوماتية قسم هندسة البرمديات من جامعة أوكسفورد وحاصل على الماجستير في الذكائ الأصطناعي من جامعة بنسلفينيا ونلت في السنة الماضية على شهادة الدكورة في الأمن السيبرانب من جامعة ليفربول في لندن وحصلت على عدة شهادات أخرى في برمجة واجهات الموافع
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>للتواصل</h2>
+
+      <div class="group">
+        <div class="text">
+           للتواصل يرجى ارسال الاسم والبريد ووصف الموقع الذي تريدني ان اصممه لك لا يقبل مبلغ أقل من 200 دولار للموقع الواحد وبالنسبة للشركات فإني أقبل دوام جزئي 6 ساعات براتب لا يقل عن 3000 دولار يرجى الأخذ يعين الأعتبار أنو شغلي نضيف مشان هيك الراتب عالي 
+        </div>
+
+        <form>
+          <label for="name">الأسم الثلاثي</label>
+          <input type="text" id="name">
+
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email">
+
+          <label for="message">وصف الموقع</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">إرسل الطلب</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
